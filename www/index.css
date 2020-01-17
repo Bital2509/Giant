@@ -1,0 +1,586 @@
+.banner {
+  width: 500px;
+  grid-column-end: span 6;
+  height: 694px;
+}
+
+.background-banner {
+  position: absolute;
+  top: 146px;
+  right: 0;
+  z-index: 0;
+}
+
+.content {
+  color: #feddd6;
+  margin-top: 149px;
+  z-index: 1;
+}
+.content .title {
+  color: white;
+  line-height: 60px;
+  font-size: 54px;
+  font-family: Dosis-SemiBold;
+}
+.content .subtitle {
+  line-height: 24px;
+  margin: 24px 0;
+  font-size: 14px;
+  font-family: Roboto;
+}
+.content .point {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+}
+.content .point .check-mark {
+  margin-right: 20px;
+}
+.content button {
+  background: white;
+  margin-top: 30px;
+  padding: 13px 40px;
+  font-size: 14px;
+  font-family: "Roboto Medium";
+  font-weight: bold;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1500px) {
+  .banner {
+    grid-column-end: span 12;
+    width: 100%;
+  }
+
+  .background-banner {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .banner {
+    padding: 5px 15px;
+    height: auto;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: 96px 0;
+  }
+}
+.feature-card {
+  margin-top: 60px;
+  grid-column-end: span 4;
+  display: flex;
+  align-items: center;
+}
+.feature-card .info {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.feature-card .info .title {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Dosis-Medium;
+}
+.feature-card .info .text {
+  margin-top: 21px;
+  font-size: 14px;
+  font-family: "Roboto Light";
+  line-height: 24px;
+}
+
+@media (max-width: 1500px) {
+  .feature-card {
+    grid-column-end: span 6;
+  }
+}
+@media (max-width: 1000px) {
+  .feature-card {
+    grid-column-end: 1;
+    padding: 0 15px;
+  }
+}
+hr {
+  margin: 120px 0;
+  grid-column-end: span 12;
+  border-top: 1px #eeeeee solid;
+  width: 100%;
+}
+
+.background-feature {
+  position: relative;
+  grid-column-end: span 6;
+}
+.background-feature img {
+  position: absolute;
+  top: -139px;
+  left: -390px;
+}
+
+.dontLeave {
+  margin-top: 55px;
+  margin-bottom: 175px;
+  color: #777777;
+  grid-column-end: span 6;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Light";
+}
+.dontLeave .title {
+  color: black;
+  font-size: 36px;
+  font-family: Dosis-Medium;
+  font-weight: bold;
+}
+.dontLeave .subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 20px 0;
+}
+.dontLeave .text {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 60px 0 30px 0;
+}
+.dontLeave .point {
+  color: black;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+}
+.dontLeave .point .check-mark {
+  margin-right: 20px;
+}
+
+@media (max-width: 1000px) {
+  hr {
+    margin: 24px 0;
+    grid-column-end: 1;
+    border-top: 1px #eeeeee solid;
+    width: 100%;
+  }
+
+  .background-feature {
+    display: none;
+  }
+
+  .dontLeave {
+    margin: 0 0 24px 0;
+    padding: 0 15px;
+    grid-column-end: 1;
+  }
+}
+.title-screen {
+  margin-top: 119px;
+  grid-column-end: span 12;
+  text-align: center;
+  font-size: 36px;
+  line-height: 30px;
+  font-family: Dosis-Medium;
+  font-weight: bold;
+}
+
+.subtitle-screen {
+  color: #777777;
+  grid-column: 3/span 8;
+  text-align: center;
+  font-family: "Roboto Light";
+  font-size: 14px;
+  line-height: 24px;
+  margin: 31px 0 80px 0;
+}
+
+.screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  grid-column-end: span 12;
+  margin-bottom: 119px;
+}
+.screen .carousel-screen {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 642px;
+  transition: all ease 1s;
+}
+.screen .prev {
+  border: 0;
+  background: #f7fafc;
+  padding: 0;
+  position: absolute;
+  left: -40px;
+  top: 45%;
+}
+.screen .next {
+  border: 0;
+  background: #f7fafc;
+  padding: 0;
+  position: absolute;
+  right: -40px;
+  top: 45%;
+}
+
+@media (max-width: 1000px) {
+  .title-screen {
+    margin-top: 48px;
+    grid-column: 1;
+  }
+
+  .subtitle-screen {
+    grid-column: 1;
+  }
+
+  .screen {
+    margin-bottom: 96px;
+    display: block;
+    text-align: center;
+  }
+  .screen .prev {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 15px;
+  }
+  .screen .next {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 15px;
+  }
+}
+.title-prising {
+  margin-top: 118px;
+  grid-column-end: span 12;
+  text-align: center;
+  font-size: 36px;
+  line-height: 30px;
+  font-family: Dosis-Medium;
+  font-weight: bold;
+}
+
+.subtitle-prising {
+  color: #777777;
+  grid-column: 3/span 8;
+  text-align: center;
+  font-family: "Roboto Light";
+  font-size: 14px;
+  line-height: 24px;
+  margin: 23px 0 80px 0;
+}
+
+.card-prising {
+  overflow: hidden;
+  color: black;
+  background: #f7fafc;
+  grid-column-end: span 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all ease 0.5s;
+}
+.card-prising .card__head {
+  padding: 15px 0;
+  font-family: Dosis-Regular;
+  font-weight: bold;
+}
+.card-prising .card__price {
+  position: relative;
+  overflow: hidden;
+  font-family: Dosis-Medium;
+  font-size: 48px;
+  font-weight: bold;
+  background: white;
+  padding: 30px 0 50px 0;
+  width: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+  transition: all ease 0.5s;
+}
+.card-prising .card__price .currency {
+  font-size: 18px;
+}
+.card-prising .card__price .time {
+  font-size: 18px;
+}
+.card-prising .card__body {
+  color: #777777;
+  padding: 40px 27px 50px 27px;
+}
+.card-prising .card__body hr {
+  margin: 10px 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px #eeeeee dashed;
+}
+.card-prising .card__footer {
+  color: #aaaaaa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-prising .card__footer button {
+  font-family: "Roboto Medium";
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.51);
+  margin: 15px 0 40px 0;
+  background: white;
+  padding: 13px 42px;
+  border: 0;
+  border-radius: 50px;
+  transition: all ease 0.5s;
+}
+
+.card-prising:hover {
+  transition: all ease 0.2s;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.51);
+}
+.card-prising:hover .card__price {
+  color: white;
+  transition: all ease 0.2s;
+  background: linear-gradient(to right, #fd712c 30%, #f31e7a);
+}
+.card-prising:hover .card__footer button {
+  color: white;
+  transition: all ease 0.2s;
+  background: linear-gradient(to right, #fd712c 30%, #f31e7a);
+}
+
+@media (max-width: 1500px) {
+  .subtitle-prising {
+    margin: 24px 32px;
+  }
+
+  .card-prising {
+    margin-top: 48px;
+    grid-column-end: span 6;
+  }
+}
+@media (max-width: 1000px) {
+  .section {
+    padding: 0 15px;
+  }
+
+  .title-prising {
+    grid-column: 1;
+  }
+
+  .subtitle-prising {
+    grid-column: 1;
+    margin: 24px 24px;
+  }
+
+  .card-prising {
+    margin-top: 48px;
+    grid-column: 1;
+  }
+}
+.section-no-grid {
+  display: flex;
+  padding: 0;
+}
+
+.video {
+  width: 100%;
+  height: 400px;
+  background-image: url("../image/Video.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.video .shadow {
+  background: rgba(0, 0, 0, 0.51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.test-title {
+  margin-top: 119px;
+  grid-column-end: span 12;
+  text-align: center;
+  font-size: 36px;
+  font-family: Dosis-Medium;
+  font-weight: bold;
+}
+
+.test-subtitle {
+  margin: 23px 0 80px 0;
+  grid-column: 3/span 8;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto Light";
+}
+
+.test-card {
+  grid-column-end: span 4;
+  margin-bottom: 120px;
+  background: #f7fafc;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.test-card .card-text {
+  color: #777777;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto Light";
+}
+.test-card .info {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+}
+.test-card .info .name {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  color: #777777;
+  font-size: 14px;
+  font-family: "Roboto Light";
+}
+.test-card .info .name .title {
+  color: black;
+  font-family: Dosis-Regular;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 1300px) {
+  .test-card {
+    grid-column-end: span 12;
+    width: 100%;
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 1000px) {
+  .test-title {
+    grid-column: 1;
+  }
+
+  .test-subtitle {
+    grid-column: 1;
+  }
+
+  .test-card {
+    grid-column: 1;
+  }
+}
+.download-title {
+  grid-column-end: span 12;
+  text-align: center;
+  margin: 119px 0 80px 0;
+  font-size: 36px;
+  font-family: Dosis-Regular;
+  color: white;
+}
+
+.download-card {
+  border: 0;
+  padding: 0;
+  background: white;
+  grid-column-end: span 4;
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.download-card .card-img {
+  background: #f7fafc;
+}
+.download-card .card-img img {
+  width: 100%;
+}
+.download-card .card-info {
+  margin-left: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.download-card .card-info .card-title {
+  font-size: 30px;
+  font-family: Dosis-SemiBold;
+  font-weight: bold;
+}
+.download-card .card-info .card-text {
+  color: #777777;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto Light";
+}
+
+@media (max-width: 1000px) {
+  .download-title {
+    margin: 48px 0;
+  }
+
+  .download-card {
+    margin: 24px;
+    grid-column: 1;
+  }
+}
+footer {
+  padding: 59px 0;
+  width: 100%;
+  background: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .social-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+footer .social-icon img {
+  margin: 0 29px;
+}
+footer .footer-text {
+  font-size: 14px;
+  font-family: "Roboto Light";
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    padding: 59px 15px;
+    text-align: center;
+  }
+}
+.offset-bottom-120 {
+  margin-bottom: 120px;
+}
+
+.offset-top-60 {
+  margin-top: 60px;
+}
+
+@media (max-width: 1000px) {
+  .offset-bottom-120 {
+    margin-bottom: 48px;
+  }
+
+  .offset-top-60 {
+    margin-top: 24px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
